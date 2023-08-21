@@ -6,15 +6,13 @@ public class Praktikum {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите год:");
         int year = scanner.nextInt();
-int j = 0;
-for (int i = 1582; i <= 2023; i ++) {
-    if (isLeapYear(i)) {
-        j++;
-        // здесь нужно вывести результат
-        System.out.println(j + " - " + i);
-
-    }
-}
+        if (isLeapYear(year)) {
+            // здесь нужно вывести результат
+            System.out.println("12.09." + year);
+        }
+        else {
+            System.out.println("13.09." + year);
+        }
     }
 
     public static boolean isLeapYear(int year) {
